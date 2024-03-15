@@ -1,0 +1,148 @@
+/******************* ESERCIZIO 1 *******************/
+.ex-1-square {
+    transition: all 3s;
+}
+
+.ex-1-square:hover {
+    /* animation-name: change;
+    animation-duration: 6s; */
+    background-color: red;
+}
+
+/* @keyframes change {
+    50% {
+        background-color: red;
+    }
+} */
+
+/******************* ESERCIZIO 2 *******************/
+.ex-2-square{
+    transition: all 1s;
+}
+.ex-2-square:active {
+    width: 100%;
+    /* animation-name: long;
+    animation-duration: 6s; */
+}
+/* @keyframes long {
+    50% {
+        width:100%w;
+    }
+} */
+/******************* ESERCIZIO 3 *******************/
+.ex-3-square {
+    transition: all 1.5s;
+}
+.ex-3-square:hover {
+    border-radius: 50%;
+    background-color: orange;
+}
+
+/******************* ESERCIZIO 4 *******************/
+.ex-4-square {
+    transition: all 3s;
+}
+.ex-4-square:hover {
+    opacity: 0;
+}
+/******************* ESERCIZIO 5 *******************/
+.ex-5-square {
+    transition: all 1s;
+}
+.ex-5-square:hover {
+    margin: 0;
+    width: 100px;
+    height: 100px;
+}
+.ex-5-square:active {
+    margin: 35px;
+    width: 30px;
+    height: 30px;
+}
+/******************* ESERCIZIO 6 *******************/
+.ex-6-img:hover {
+    filter: grayscale(100%);
+}
+/******************* ESERCIZIO 7 *******************/
+.ex-7-img {
+    transition: all 3s;
+}
+.ex-7-img:hover {
+    filter: grayscale(100%)
+}
+
+/******************* ESERCIZIO 8 *******************/
+.ex-8-img {
+    transition: 3s;
+}
+.ex-8-img:hover {
+    filter: sepia(100%);
+    border-radius: 50%;
+}
+/******************* ESERCIZIO 9 *******************/
+.ex-9-img {
+    transition: 3s;
+}
+.ex-9-img:hover {
+    filter: sepia(100%);
+    border-radius: 20px;
+    margin: 0 0;
+    width: 600px;
+}
+/******************* ESERCIZIO 10 *******************/
+.ex-10-icon {
+    animation-name: spin ;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    transition-timing-function: linear;
+}
+@keyframes spin {
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+/******************* ESERCIZIO 11 *******************/
+.ex-11-icon:hover {
+    animation-name: spin2 ;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    transition-timing-function: ease;
+}
+@keyframes spin2 {
+    90% {
+        transform: rotate(300deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
+}
+/******************* ESERCIZIO 12 *******************/
+
+
+.ex-12-button:hover > .ex-12-top-white  {
+    animation-name: translate1;
+    animation-duration: 2s;
+}
+
+@keyframes translate1 {
+    50% {
+        left: 60%;
+    }
+    100% {
+        left: 10%;
+    }
+}
+
+.ex-12-button:hover > .ex-12-bottom-white {
+    animation-name: translate2;
+    animation-duration: 2s;
+}
+
+@keyframes translate2 {
+    50% {
+        right: 60%;
+    }
+    100% {
+        right: 20%;
+    }
+}
